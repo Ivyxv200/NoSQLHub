@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>发布帖子 - NoSQLHub</title>
+
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/publish.css">
+
+</head>
+
+<body>
+
+    <!-- 导航栏 -->
+    <div id="navbar-container"></div>
+
+    <!-- 页面主体 -->
+
+    <main class="publish-container">
+
+        <div class="publish-card">
+
+            <h1>
+                发布帖子
+            </h1>
+
+            <!-- 标题 -->
+
+            <div class="form-group">
+
+                <label>
+                    帖子标题
+                </label>
+
+                <input
+                        type="text"
+                        id="title"
+                        placeholder="请输入帖子标题"
+                >
+
+            </div>
+
+            <!-- 标签 -->
+            <div class="form-group">
+
+                <label>
+                    标签（最多选择3个）
+                </label>
+
+                <div class="tags-container">
+
+                    <span class="tag-option">
+                        Redis
+                    </span>
+
+                    <span class="tag-option">
+                        MongoDB
+                    </span>
+
+                    <span class="tag-option">
+                        NoSQL
+                    </span>
+
+                    <span class="tag-option">
+                        MySQL
+                    </span>
+
+                    <span class="tag-option">
+                        PostgreSQL
+                    </span>
+
+                    <span class="tag-option">
+                        Java
+                    </span>
+
+                    <span class="tag-option">
+                        Python
+                    </span>
+
+                    <span class="tag-option">
+                        Node.js
+                    </span>
+
+                    <span class="tag-option">
+                        SpringBoot
+                    </span>
+
+                    <span class="tag-option">
+                        学习笔记
+                    </span>
+
+                    <span class="tag-option">
+                        项目实战
+                    </span>
+
+                    <span class="tag-option">
+                        问题求助
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- 内容 -->
+            <div class="form-group">
+                <label>
+                    帖子内容
+                </label>
+
+                <textarea
+                        id="content"
+                        placeholder="请输入帖子内容..."
+                ></textarea>
+            </div>
+
+            <!-- 图片上传 -->
+            <div class="form-group">
+
+                <label>
+                    上传图片（最多5张）
+                </label>
+
+                <div class="upload-area">
+
+                    <input
+                        type="file"
+                        id="imageInput"
+                        multiple
+                        accept="image/*"
+                        hidden
+                    >
+
+                    <button
+                        type="button"
+                        id="selectImageBtn"
+                    >
+                        选择图片
+                    </button>
+
+                </div>
+
+                <div id="imagePreview"></div>
+
+            </div>
+
+            <!-- 提交按钮 -->
+            <button id="publishBtn">
+                发布帖子
+            </button>
+
+        </div>
+
+    </main>
+
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/publish.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        我的帖子 - NoSQLHub
+    </title>
+
+    <!-- navbar -->
+    <link
+        rel="stylesheet"
+        href="../css/navbar.css"
+    >
+
+    <!-- 页面 -->
+    <link
+        rel="stylesheet"
+        href="../css/myposts.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- 导航栏 -->
+    <div id="navbar-container"></div>
+
+    <!-- 页面主体 -->
+    <main class="myposts-container">
+
+        <!-- 标题 -->
+        <div class="page-header">
+            <h1>
+                我的帖子
+            </h1>
+
+            <a
+                href="publish.html"
+                class="publish-btn"
+            >
+                发布新帖子
+            </a>
+        </div>
+
+        <!-- 帖子列表 -->
+        <div
+            class="post-list"
+            id="postList"
+        >
+        </div>
+
+        <!-- 分页 -->
+        <div
+            id="mypostsPagination"
+            class="pagination"
+        >
+        </div>
+
+    </main>
+
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/myposts.js"></script>
+
+</body>
+
+</html>

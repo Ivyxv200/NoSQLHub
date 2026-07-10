@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        用户主页
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="../css/navbar.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/author.css"
+    >
+
+</head>
+
+<body>
+
+    <div id="navbar-container"></div>
+
+    <main class="author-container">
+
+        <section class="user-card">
+
+            <div
+                class="user-avatar"
+                id="userAvatar"
+            >
+                U
+            </div>
+
+            <h1 id="usernameText">
+                用户名
+            </h1>
+
+            <p id="profileText">
+                用户简介
+            </p>
+
+            <div class="user-stats">
+
+                <div class="stat-item">
+
+                    <h2 id="followingCount">
+                        0
+                    </h2>
+
+                    <span>
+                        关注
+                    </span>
+
+                </div>
+
+                <div class="stat-item">
+
+                    <h2 id="followersCount">
+                        0
+                    </h2>
+
+                    <span>
+                        粉丝
+                    </span>
+
+                </div>
+
+            </div>
+
+            <button id="followBtn">
+
+                关注
+
+            </button>
+
+        </section>
+
+        <section class="posts-card">
+
+            <h2>
+                Ta的帖子
+            </h2>
+
+            <div id="postsList">
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+
+    <script src="../js/navbar.js"></script>
+
+    <script src="../js/author.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    width: 100%;
+
+    overflow-x: hidden;
+}
+
+body {
+
+    background-color: #f5f7fb;
+
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+/* 页面主体 */
+
+.settings-container {
+
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 120px auto 50px auto;
+}
+
+/* 标题 */
+
+.page-header {
+
+    margin-bottom: 35px;
+}
+
+.page-header h1 {
+
+    font-size: 42px;
+
+    color: #1e293b;
+}
+
+/* 设置卡片 */
+
+.settings-card {
+
+    background-color: white;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+/* 单项 */
+
+.setting-item {
+
+    padding: 28px 35px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* 左边 */
+
+.setting-left h2 {
+
+    color: #1e293b;
+
+    font-size: 26px;
+
+    margin-bottom: 8px;
+}
+
+.setting-left p {
+
+    color: #64748b;
+
+    font-size: 16px;
+}
+
+/* 普通按钮 */
+
+.setting-btn {
+
+    width: 110px;
+    height: 45px;
+
+    border: none;
+    border-radius: 12px;
+
+    background-color: #3b82f6;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.setting-btn:hover {
+
+    background-color: #2563eb;
+}
+
+/* 修改密码区域 */
+
+.password-section {
+    padding: 30px 35px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.password-section h2 {
+    color: #1e293b;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.password-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.password-form input {
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.password-form input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
+}
+
+.password-form .setting-btn {
+    margin-top: 6px;
+    width: 140px;
+}
+
+/* 危险按钮 */
+
+.danger-btn {
+
+    width: 110px;
+    height: 45px;
+
+    border: none;
+    border-radius: 12px;
+
+    background-color: #ef4444;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.danger-btn:hover {
+
+    background-color: #dc2626;
+}
+
+/* 开关 */
+
+.switch {
+
+    position: relative;
+
+    display: inline-block;
+
+    width: 65px;
+    height: 35px;
+}
+
+/* 隐藏 checkbox */
+
+.switch input {
+
+    opacity: 0;
+
+    width: 0;
+    height: 0;
+}
+
+/* 滑块 */
+
+.slider {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: #cbd5e1;
+
+    border-radius: 35px;
+
+    transition: 0.3s;
+
+    cursor: pointer;
+}
+
+/* 圆点 */
+
+.slider::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 27px;
+    height: 27px;
+
+    left: 4px;
+    top: 4px;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+    transition: 0.3s;
+}
+
+/* 选中 */
+
+.switch input:checked + .slider {
+
+    background-color: #3b82f6;
+}
+
+.switch input:checked + .slider::before {
+
+    transform: translateX(30px);
+}
+
+/* 删除账户 */
+
+.danger-item {
+
+    border-bottom: none;
+}

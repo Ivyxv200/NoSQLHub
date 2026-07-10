@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    width: 100%;
+
+    overflow-x: hidden;
+}
+
+body {
+
+    background-color: #f5f7fb;
+
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+.favorites-container {
+
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 120px auto 50px auto;
+}
+
+.page-header {
+
+    margin-bottom: 35px;
+}
+
+.page-header h1 {
+
+    color: #1e293b;
+
+    font-size: 40px;
+}
+
+.favorites-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.favorite-card {
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    padding: 28px;
+
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.favorite-card:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+}
+
+.favorite-card h2 {
+
+    color: #1e293b;
+
+    margin-bottom: 15px;
+}
+
+.favorite-card p {
+
+    color: #64748b;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+.favorite-info {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #94a3b8;
+
+    font-size: 14px;
+}
+
+.remove-btn {
+
+    margin-top: 15px;
+
+    width: 120px;
+    height: 42px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #ef4444;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.remove-btn:hover {
+
+    background-color: #dc2626;
+}
+
+.empty-tip {
+
+    text-align: center;
+
+    color: #94a3b8;
+
+    padding: 40px;
+}

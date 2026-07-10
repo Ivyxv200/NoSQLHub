@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>系统公告 - NoSQLHub</title>
+
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/announcements.css">
+
+</head>
+
+<body>
+
+    <!-- 导航栏 -->
+    <div id="navbar-container"></div>
+
+    <main class="announcement-list-container">
+
+        <div class="announcement-header">
+
+            <h1>
+                系统公告
+            </h1>
+
+            <p>
+                查看 NoSQLHub 官方发布的所有公告
+            </p>
+
+        </div>
+
+        <div
+            id="announcementList"
+            class="announcement-list"
+        >
+
+            <div class="loading">
+                正在加载公告...
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/announcements.js"></script>
+
+</body>
+
+</html>

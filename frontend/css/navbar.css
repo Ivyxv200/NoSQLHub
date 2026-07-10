@@ -1,0 +1,370 @@
+/* 顶部导航栏 */
+
+.navbar {
+
+    width: 100%;
+    height: 75px;
+
+    background-color: #1e293b;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 50px;
+}
+
+/* Logo */
+
+.logo a {
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+/* 搜索框 */
+
+.search-box {
+
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+
+    gap: 10px;
+}
+
+.search-box input {
+
+    width: 420px;
+    height: 42px;
+
+    border: none;
+    border-radius: 10px;
+
+    padding-left: 15px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+/* 用户区域 */
+
+.user-area {
+
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+/* 头像 */
+
+.avatar {
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background-color: #3b82f6;
+
+    color: white;
+
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.avatar:hover {
+
+    background-color: #2563eb;
+}
+
+/* 管理员头像 */
+
+.admin-avatar {
+
+    background: #f59e0b;
+
+}
+
+.admin-avatar:hover {
+
+    background: #d97706;
+
+}
+
+/* 下拉菜单整体 */
+
+.dropdown {
+
+    position: relative;
+
+    display: inline-block;
+
+    padding-bottom: 10px;
+}
+
+/* 下拉按钮 */
+
+.dropdown-btn {
+
+    width: 35px;
+    height: 35px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #334155;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+}
+
+.dropdown-btn:hover {
+
+    background-color: #475569;
+}
+
+/* 小三角 */
+
+.arrow-icon {
+
+    width: 0;
+    height: 0;
+
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid white;
+}
+
+/* 下拉菜单 */
+
+.dropdown-content {
+
+    display: none;
+
+    position: absolute;
+
+    top: 35px;
+    right: 0;
+
+    width: 180px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+
+    overflow: hidden;
+
+    z-index: 9999;
+}
+
+/* 菜单项 */
+
+.dropdown-content a {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 16px 16px;
+
+    text-decoration: none;
+
+    color: #334155;
+
+    font-size: 18px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #e2e8f0;
+
+    transition: 0.2s;
+}
+
+/* hover */
+
+.dropdown-content a:hover {
+
+    background-color: #f8fafc;
+}
+
+/* 鼠标移动显示菜单 */
+
+.dropdown:hover .dropdown-content {
+
+    display: block;
+}
+
+/* 退出登录 */
+
+.logout-btn {
+    color: #ef4444 !important;
+
+    font-weight: bold;
+
+    background-color: white !important;
+
+    border-bottom: none !important;
+}
+
+.logout-btn:hover {
+    color: #dc2626 !important;
+
+    background-color: #fef2f2 !important;
+}
+
+
+/* 公共导航按钮 */
+
+.nav-btn {
+
+    height: 42px;
+
+    padding: 0 22px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #3b82f6;
+
+    color: white;
+
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+
+    background-color: #2563eb;
+}
+
+.suggestion-box {
+
+    position: absolute;
+
+    top: 55px;
+
+    left: 0;
+
+    width: 420px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    display: none;
+
+    overflow: hidden;
+
+    z-index: 9999;
+}
+
+.suggestion-item {
+
+    padding: 12px 16px;
+
+    cursor: pointer;
+
+    color: #334155;
+
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.suggestion-item:hover {
+
+    background-color: #f8fafc;
+}
+
+.notification-link {
+
+    position: relative;
+}
+
+.notification-badge {
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 34px;
+    height: 24px;
+
+    padding: 0 8px;
+
+    border-radius: 999px;
+
+    background-color: #ef4444;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    margin-left: 8px;
+}
+
+.navbar-avatar-image {
+
+    width: 100%;
+
+    height: 100%;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    display: block;
+}

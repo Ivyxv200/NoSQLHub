@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoSQLHub</title>
+
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/homepage.css">
+</head>
+
+<body>
+
+    <!-- 顶部导航栏 -->
+    <div id="navbar-container"></div>
+
+    <!-- 页面主体 -->
+    <main class="container">
+
+        <!-- 热门帖子 -->
+        <section class="hot-section">
+
+            <h2>
+                🔥 热门帖子
+            </h2>
+
+            <div class="hot-list">
+
+                <div class="hot-card">
+                    Redis 为什么这么快？
+                </div>
+
+                <div class="hot-card">
+                    MongoDB 和 MySQL 的区别
+                </div>
+
+                <div class="hot-card">
+                    NoSQL 的应用场景有哪些？
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- 热门标签 -->
+        <section class="tag-section">
+
+            <h2>
+                🏷️ 热门标签
+            </h2>
+
+            <div class="home-tag-list">
+
+                <span class="home-tag">Redis</span>
+
+                <span class="home-tag">MongoDB</span>
+
+                <span class="home-tag">NoSQL</span>
+
+                <span class="home-tag">MySQL</span>
+
+                <span class="home-tag">PostgreSQL</span>
+
+                <span class="home-tag">Java</span>
+
+                <span class="home-tag">Python</span>
+
+                <span class="home-tag">Node.js</span>
+
+                <span class="home-tag">SpringBoot</span>
+
+                <span class="home-tag">学习笔记</span>
+
+                <span class="home-tag">项目实战</span>
+
+                <span class="home-tag">问题求助</span>
+
+            </div>
+
+        </section>
+
+        <!-- 热门搜索（Redis ZSet） -->
+        <section class="search-rank-section">
+            <h2>
+                🔥 热门搜索
+            </h2>
+
+            <div id="searchRankList"></div>
+        </section>
+
+        <!-- 帖子列表 -->
+        <section class="post-section">
+            <h2>
+                📚 最新帖子
+            </h2>
+
+            <div id="postsContainer"></div>
+
+            <div class="load-more-area">
+                <button id="loadMoreBtn">
+                    加载更多
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/homepage.js"></script>
+
+</body>
+
+</html>
+```

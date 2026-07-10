@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>帖子管理 - NoSQLHub</title>
+
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/admin.css">
+
+</head>
+
+<body>
+
+    <!-- 导航栏 -->
+    <div id="navbar-container"></div>
+
+    <main class="admin-container">
+
+        <div class="admin-page-header">
+
+            <h1>
+                帖子管理
+            </h1>
+
+            <a
+                href="admin.html"
+                class="back-admin-btn"
+            >
+                返回后台首页
+            </a>
+
+        </div>
+
+        <section class="admin-section">
+
+            <div class="section-title">
+                <h2>
+                    帖子列表
+                </h2>
+            </div>
+
+            <div
+                id="postList"
+                class="admin-list"
+            >
+            </div>
+
+            <div
+                id="postPagination"
+                class="admin-pagination"
+            >
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/adminPosts.js"></script>
+
+</body>
+
+</html>

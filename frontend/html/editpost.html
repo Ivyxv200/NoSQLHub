@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>编辑帖子 - NoSQLHub</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/navbar.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/editpost.css"
+    >
+
+</head>
+
+<body>
+
+    <div id="navbar-container"></div>
+
+    <main class="edit-container">
+
+        <h1>
+            编辑帖子
+        </h1>
+
+        <input
+            type="text"
+            id="title"
+            placeholder="请输入标题"
+        >
+
+        <div class="form-group">
+
+            <label>
+                标签（最多选择3个）
+            </label>
+
+            <div class="tags-container">
+
+                <span class="tag-option">Redis</span>
+                <span class="tag-option">MongoDB</span>
+                <span class="tag-option">NoSQL</span>
+                <span class="tag-option">MySQL</span>
+                <span class="tag-option">PostgreSQL</span>
+                <span class="tag-option">Java</span>
+                <span class="tag-option">Python</span>
+                <span class="tag-option">Node.js</span>
+                <span class="tag-option">SpringBoot</span>
+                <span class="tag-option">学习笔记</span>
+                <span class="tag-option">项目实战</span>
+                <span class="tag-option">问题求助</span>
+
+            </div>
+
+        </div>
+
+        <textarea
+            id="content"
+            placeholder="请输入正文内容"
+        ></textarea>
+
+        <div class="button-group">
+            <button id="cancelBtn">
+                取消修改
+            </button>
+
+            <button id="saveBtn">
+                保存修改
+            </button>
+        </div>
+
+    </main>
+
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/editpost.js"></script>
+
+</body>
+
+</html>

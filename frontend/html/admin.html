@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>管理员后台 - NoSQLHub</title>
+
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/admin.css">
+
+</head>
+
+<body>
+
+    <!-- 导航栏 -->
+    <div id="navbar-container"></div>
+
+    <main class="admin-container">
+
+        <h1>
+            管理员后台
+        </h1>
+
+        <!-- 数据统计面板 -->
+        <div class="stats-panel">
+
+            <div class="stat-card">
+                <h3>
+                    总用户数
+                </h3>
+                <p id="totalUsers">
+                    0
+                </p>
+            </div>
+
+            <div class="stat-card">
+                <h3>
+                    总帖子数
+                </h3>
+                <p id="totalPosts">
+                    0
+                </p>
+            </div>
+
+            <div class="stat-card">
+                <h3>
+                    总评论数
+                </h3>
+                <p id="totalComments">
+                    0
+                </p>
+            </div>
+
+            <div class="stat-card">
+                <h3>
+                    今日活跃用户
+                </h3>
+                <p id="todayActiveUsers">
+                    0
+                </p>
+            </div>
+
+            <div class="stat-card">
+                <h3>
+                    在线人数
+                </h3>
+                <p id="onlineUsers">
+                    0
+                </p>
+            </div>
+
+        </div>
+
+        <div class="admin-grid">
+
+        <div class="admin-grid">
+
+            <!-- 帖子管理 -->
+            <div
+                class="admin-card"
+                id="adminPostsCard"
+            >
+                <div class="card-icon">
+                    📝
+                </div>
+
+                <h2>
+                    帖子管理
+                </h2>
+
+                <p>
+                    查看、删除所有帖子
+                </p>
+            </div>
+
+            <!-- 评论管理 -->
+            <div
+                class="admin-card"
+                id="adminCommentsCard"
+            >
+                <div class="card-icon">
+                    💬
+                </div>
+
+                <h2>
+                    评论管理
+                </h2>
+
+                <p>
+                    查看、删除所有评论
+                </p>
+            </div>
+
+            <!-- 用户管理 -->
+            <div
+                class="admin-card"
+                id="adminUsersCard"
+            >
+                <div class="card-icon">
+                    👤
+                </div>
+
+                <h2>
+                    用户管理
+                </h2>
+
+                <p>
+                    封禁、恢复普通用户
+                </p>
+            </div>
+
+            <!-- 举报审核 -->
+            <div
+                class="admin-card"
+                id="adminReportsCard"
+            >
+                <div class="card-icon">
+                    🚩
+                </div>
+
+                <h2>
+                    举报审核
+                </h2>
+
+                <p>
+                    审核举报并处理违规帖子
+                </p>
+            </div>
+
+            <!-- 系统公告 -->
+            <div
+                class="admin-card"
+                id="adminAnnouncementsCard"
+            >
+                <div class="card-icon">
+                    📢
+                </div>
+
+                <h2>
+                    系统公告
+                </h2>
+
+                <p>
+                    发布系统公告并通知用户
+                </p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/admin.js"></script>
+
+</body>
+
+</html>

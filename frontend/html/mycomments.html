@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        我的评论 - NoSQLHub
+    </title>
+
+    <!-- navbar -->
+    <link
+        rel="stylesheet"
+        href="../css/navbar.css"
+    >
+
+    <!-- 页面 -->
+    <link
+        rel="stylesheet"
+        href="../css/mycomments.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- 导航栏 -->
+    <div id="navbar-container"></div>
+
+    <!-- 页面主体 -->
+    <main class="comments-container">
+
+        <!-- 标题 -->
+        <div class="page-header">
+
+            <h1>
+                我的评论
+            </h1>
+
+        </div>
+
+        <!-- 评论列表 -->
+        <div
+            id="commentList"
+            class="comment-list"
+        >
+        </div>
+
+        <!-- 分页 -->
+        <div
+            id="mycommentsPagination"
+            class="pagination"
+        >
+        </div>
+
+    </main>
+
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/mycomments.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>搜索结果 - NoSQLHub</title>
+
+    <!-- 导航栏 -->
+    <link rel="stylesheet" href="../css/navbar.css">
+
+    <!-- 页面样式 -->
+    <link rel="stylesheet" href="../css/search.css">
+
+</head>
+
+<body>
+
+    <!-- 导航栏 -->
+    <div id="navbar-container"></div>
+
+    <!-- 页面主体 -->
+    <main class="search-container">
+
+        <!-- 搜索信息 -->
+        <div class="search-header">
+            <h1 id="searchTitle">
+                搜索结果
+            </h1>
+        </div>
+
+        <!-- 用户搜索结果 -->
+        <section class="search-section">
+
+            <h2>
+                用户
+            </h2>
+
+            <div id="userResultList">
+            </div>
+
+        </section>
+
+        <!-- 帖子搜索结果 -->
+        <section class="search-section">
+
+            <h2>
+                帖子
+            </h2>
+
+            <div id="searchResultList">
+            </div>
+
+        </section>
+
+        <!-- 分页 -->
+        <div id="pagination" class="pagination">
+        </div>
+
+    </main>
+
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/search.js"></script>
+
+</body>
+
+</html>

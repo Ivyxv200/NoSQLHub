@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f5f7fb;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+/* 页面主体 */
+
+.profile-container {
+
+    width: 90%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding-top: 120px;
+
+    display: flex;
+
+    gap: 30px;
+}
+
+/* 左侧用户卡片 */
+
+.user-card {
+
+    width: 320px;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 24px;
+
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+
+    text-align: center;
+
+    height: fit-content;
+}
+
+/* 头像 */
+
+.user-avatar {
+
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+
+    background-color: #3b82f6;
+
+    color: white;
+
+    font-size: 50px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto 25px auto;
+}
+
+/* 用户名 */
+
+.user-card h1 {
+
+    font-size: 36px;
+
+    color: #1e293b;
+
+    margin-bottom: 12px;
+}
+
+/* 简介 */
+
+.user-card p {
+
+    color: #64748b;
+
+    font-size: 18px;
+
+    margin-bottom: 30px;
+}
+
+/* 用户统计 */
+.user-stats {
+
+    display: flex;
+    
+    justify-content: space-between;
+
+    margin-bottom: 35px;
+}
+
+.stat-item {
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    border-radius: 12px;
+
+    padding: 8px;
+}
+
+.stat-item:hover {
+
+    background-color: #f8fafc;
+
+    transform: translateY(-2px);
+}
+
+/* 单项 */
+
+.stat-item h2 {
+
+    color: #2563eb;
+
+    font-size: 30px;
+
+    margin-bottom: 6px;
+}
+
+.stat-item span {
+
+    color: #64748b;
+
+    font-size: 16px;
+}
+
+/* 退出登录 */
+
+#logoutBtn {
+
+    width: 100%;
+    height: 55px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background-color: #ef4444;
+
+    color: white;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#logoutBtn:hover {
+
+    background-color: #dc2626;
+}
+
+/* 右侧内容 */
+
+.content-area {
+
+    flex: 1;
+}
+
+/* 内容卡片 */
+
+.section-card {
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 24px;
+
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+
+    margin-bottom: 30px;
+}
+
+/* 标题 */
+
+.section-card h2 {
+
+    color: #1e293b;
+
+    font-size: 30px;
+
+    margin-bottom: 25px;
+}
+
+/* 帖子项 */
+
+.post-item {
+
+    padding: 20px 0;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.post-item h3 {
+
+    color: #334155;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+.post-item span {
+
+    color: #94a3b8;
+
+    font-size: 16px;
+}
+
+/* 评论项 */
+
+.comment-item {
+
+    padding: 20px;
+
+    background-color: #f8fafc;
+
+    border-radius: 14px;
+
+    margin-bottom: 18px;
+
+    font-size: 18px;
+
+    color: #475569;
+
+    line-height: 1.8;
+}
+
+/* 可点击卡片 */
+
+.clickable-card {
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.clickable-card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+}
+
+/* 简介编辑框 */
+
+.profile-input {
+
+    width: 100%;
+
+    height: 90px;
+
+    padding: 10px;
+
+    border: 1px solid #dbe2ea;
+
+    border-radius: 10px;
+
+    resize: none;
+
+    font-size: 16px;
+
+    margin-bottom: 15px;
+}
+
+/* 编辑按钮 */
+
+.profile-btn {
+
+    width: 100%;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background-color: #3b82f6;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    margin-bottom: 25px;
+
+    transition: 0.3s;
+}
+
+.profile-btn:hover {
+
+    background-color: #2563eb;
+}
+
+.avatar-image {
+
+    width: 100%;
+
+    height: 100%;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.change-avatar-btn {
+
+    width: 120px;
+
+    height: 38px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #3b82f6;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+
+    transition: 0.3s;
+}
+
+.change-avatar-btn:hover {
+
+    background-color: #2563eb;
+}
+
+.level-box {
+    margin-top: 10px;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.level-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.level-badge {
+    font-size: 15px;
+    font-weight: 700;
+    color: #5a7d22;
+}
+
+.exp-text {
+    font-size: 14px;
+    color: #8a8a8a;
+    font-weight: 500;
+}
+
+.exp-progress {
+    width: 100%;
+    height: 14px;
+    background-color: #e5e7eb;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.exp-progress-bar {
+    width: 0%;
+    height: 100%;
+    border-radius: 999px;
+    background: repeating-linear-gradient(
+        -45deg,
+        #9be15d 0px,
+        #9be15d 8px,
+        #7ed957 8px,
+        #7ed957 16px
+    );
+    transition: width 0.4s ease;
+}

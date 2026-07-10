@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>系统公告 - NoSQLHub</title>
+
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/announcement.css">
+
+</head>
+
+<body>
+
+    <!-- 导航栏 -->
+    <div id="navbar-container"></div>
+
+    <main class="announcement-container">
+
+        <div class="announcement-header">
+
+            <div class="announcement-back-group">
+                <a
+                    href="notifications.html"
+                    class="back-btn"
+                >
+                    ← 返回消息通知
+                </a>
+
+                <a
+                    href="announcements.html"
+                    class="back-btn"
+                >
+                    ← 返回系统公告
+                </a>
+            </div>
+
+            <span class="announcement-tag">
+                系统公告
+            </span>
+
+        </div>
+
+        <div class="announcement-card">
+
+            <h1 id="announcementTitle">
+                加载中...
+            </h1>
+
+            <div class="announcement-info">
+
+                <span>
+                    发布者：
+                    <b id="announcementPublisher">
+                        系统
+                    </b>
+                </span>
+
+                <span id="announcementTime">
+                </span>
+
+            </div>
+
+            <hr>
+
+            <div
+                id="announcementContent"
+                class="announcement-content"
+            >
+                正在加载公告内容...
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/announcement.js"></script>
+
+</body>
+
+</html>

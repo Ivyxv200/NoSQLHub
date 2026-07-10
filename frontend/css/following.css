@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    width: 100%;
+
+    overflow-x: hidden;
+}
+
+body {
+
+    background-color: #f5f7fb;
+
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+.following-container {
+
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 120px auto 50px auto;
+}
+
+.page-header {
+
+    margin-bottom: 35px;
+}
+
+.page-header h1 {
+
+    color: #1e293b;
+
+    font-size: 40px;
+}
+
+.following-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.following-card {
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.user-info {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+.user-avatar {
+
+    width: 65px;
+
+    height: 65px;
+
+    border-radius: 50%;
+
+    background-color: #3b82f6;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 28px;
+
+    font-weight: bold;
+}
+
+.user-detail h2 {
+
+    color: #1e293b;
+
+    margin-bottom: 8px;
+}
+
+.user-detail p {
+
+    color: #64748b;
+}
+
+.unfollow-btn {
+
+    width: 110px;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #ef4444;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.unfollow-btn:hover {
+
+    background-color: #dc2626;
+}
+
+.empty-tip {
+
+    text-align: center;
+
+    color: #94a3b8;
+
+    padding: 40px;
+}

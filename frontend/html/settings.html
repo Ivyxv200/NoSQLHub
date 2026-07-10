@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        设置 - NoSQLHub
+    </title>
+
+    <!-- navbar -->
+    <link
+        rel="stylesheet"
+        href="../css/navbar.css"
+    >
+
+    <!-- 页面 -->
+    <link
+        rel="stylesheet"
+        href="../css/settings.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- 导航栏 -->
+    <div id="navbar-container"></div>
+
+    <!-- 页面主体 -->
+    <main class="settings-container">
+
+        <!-- 标题 -->
+        <div class="page-header">
+
+            <h1>
+                设置
+            </h1>
+
+        </div>
+
+        <!-- 设置区域 -->
+        <div class="settings-card">
+
+            <!-- 用户名 -->
+            <div class="setting-item">
+
+                <div class="setting-left">
+
+                    <h2>
+                        用户名
+                    </h2>
+
+                    <p>
+                        修改你的用户名
+                    </p>
+
+                </div>
+
+                <button class="setting-btn">
+                    修改
+                </button>
+
+            </div>
+
+            <!-- 修改密码 -->
+            <div class="password-section">
+
+                <h2>
+                    修改密码
+                </h2>
+
+                <div class="password-form">
+
+                    <input
+                        type="password"
+                        id="oldPassword"
+                        placeholder="请输入原密码"
+                    >
+
+                    <input
+                        type="password"
+                        id="newPassword"
+                        placeholder="请输入新密码"
+                    >
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="请再次输入新密码"
+                    >
+
+                    <button
+                        id="changePasswordBtn"
+                        class="setting-btn"
+                    >
+                        修改密码
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- 邮箱 -->
+            <div class="setting-item">
+
+                <div class="setting-left">
+
+                    <h2>
+                        邮箱
+                    </h2>
+
+                    <p>
+                        绑定或修改邮箱
+                    </p>
+
+                </div>
+
+                <button class="setting-btn">
+                    修改
+                </button>
+
+            </div>
+
+            <!-- 深色模式 -->
+            <div class="setting-item">
+
+                <div class="setting-left">
+
+                    <h2>
+                        深色模式
+                    </h2>
+
+                    <p>
+                        开启夜间模式
+                    </p>
+
+                </div>
+
+                <label class="switch">
+
+                    <input
+                        type="checkbox"
+                        id="darkMode"
+                    >
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+            <!-- 通知 -->
+            <div class="setting-item">
+
+                <div class="setting-left">
+
+                    <h2>
+                        消息通知
+                    </h2>
+
+                    <p>
+                        接收评论和点赞通知
+                    </p>
+
+                </div>
+
+                <label class="switch">
+
+                    <input
+                        type="checkbox"
+                        checked
+                    >
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+            <!-- 删除账户 -->
+            <div class="setting-item danger-item">
+
+                <div class="setting-left">
+
+                    <h2>
+                        删除账户
+                    </h2>
+
+                    <p>
+                        删除后无法恢复
+                    </p>
+
+                </div>
+
+                <button
+                    class="danger-btn"
+                    id="deleteAccountBtn"
+                >
+                    删除
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/settings.js"></script>
+
+</body>
+
+</html>

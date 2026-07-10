@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>我的主页 - NoSQLHub</title>
+
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/profile.css">
+
+</head>
+
+<body>
+
+    <!-- 导航栏 -->
+    <div id="navbar-container"></div>
+
+    <!-- 页面主体 -->
+
+    <main class="profile-container">
+
+        <!-- 左侧用户信息 -->
+
+        <section class="user-card">
+
+            <!-- 头像 -->
+            <!-- userAvatar：负责显示头像或首字母 -->
+            <div class="user-avatar" id="userAvatar">
+                I
+            </div>
+
+            <!-- avatarInput：真正选择文件，但隐藏 -->
+            <input
+                type="file"
+                id="avatarInput"
+                accept="image/*"
+                hidden
+            >
+
+            <!-- changeAvatarBtn：用户点击这个按钮来选择头像 -->
+            <button
+                id="changeAvatarBtn"
+                class="change-avatar-btn"
+            >
+                更换头像
+            </button>
+
+            <!-- 用户名 -->
+            <h1 id="usernameText">
+                Ivy
+            </h1>
+
+            <!-- 经验值 -->
+            <div class="level-box">
+
+                <div class="level-row">
+                    <span id="levelText" class="level-badge">
+                        Lv1
+                    </span>
+
+                    <span id="expText" class="exp-text">
+                        经验值：0 / 100
+                    </span>
+                </div>
+
+                <div class="exp-progress">
+                    <div id="expProgressBar" class="exp-progress-bar"></div>
+                </div>
+
+            </div>
+
+            <!-- 简介 -->
+            <p id="profileText"></p>
+
+                <textarea
+                    id="profileInput"
+                    class="profile-input"
+                    maxlength="100"
+                    style="display:none;"
+                ></textarea>
+
+                <button
+                    id="editProfileBtn"
+                    class="profile-btn"
+                >
+                    编辑简介
+                </button>
+
+            <!-- 用户数据 -->
+            <div class="user-stats">
+
+                <div class="stat-item" id="followingStat">
+                    <h2 id="followingCount">
+                        0
+                    </h2>
+
+                    <span>
+                        关注
+                    </span>
+                </div>
+
+                <div class="stat-item" id="followersStat">
+                    <h2 id="followersCount">
+                        0
+                    </h2>
+
+                    <span>
+                        粉丝
+                    </span>
+                </div>
+
+                <div class="stat-item" id="likesStat">
+                    <h2 id="likesCount">
+                        0
+                    </h2>
+
+                    <span>
+                        点赞
+                    </span>
+                </div>
+
+                <div class="stat-item" id="favoritesStat">
+                    <h2 id="favoritesCount">
+                        0
+                    </h2>
+
+                    <span>
+                        收藏
+                    </span>
+                </div>
+
+            </div>
+
+            <!-- 退出登录 -->
+
+            <button id="logoutBtn">
+                退出登录
+            </button>
+
+        </section>
+
+        <!-- 右侧内容 -->
+
+        <section class="content-area">
+
+            <!-- 我的帖子 -->
+            <div class="section-card clickable-card" id="mypostsCard">
+
+                <h2>
+                    我的帖子
+                </h2>
+
+                <div id="recentPosts">
+                </div>
+
+            </div>
+
+            <!-- 我的评论 -->
+
+            <div class="section-card clickable-card" id="mycommentsCard">
+
+                <h2>
+                    我的评论
+                </h2>
+
+                <div id="recentComments">
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/profile.js"></script>
+
+</body>
+
+</html>

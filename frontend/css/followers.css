@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background: #f5f7fb;
+
+    font-family:
+        "Microsoft YaHei",
+        sans-serif;
+}
+
+.followers-container {
+
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 120px auto 50px;
+}
+
+.page-header {
+
+    margin-bottom: 35px;
+}
+
+.page-header h1 {
+
+    font-size: 40px;
+
+    color: #1e293b;
+}
+
+.followers-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.follower-card {
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow:
+        0 2px 10px
+        rgba(0,0,0,0.08);
+}
+
+.follower-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+.follower-avatar {
+
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+
+    background: #3b82f6;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.follower-info h2 {
+
+    color: #1e293b;
+
+    margin-bottom: 8px;
+}
+
+.follower-info p {
+
+    color: #64748b;
+}
+
+.empty-tip {
+
+    text-align: center;
+
+    padding: 80px;
+
+    color: #94a3b8;
+
+    font-size: 20px;
+}
