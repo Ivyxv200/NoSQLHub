@@ -33,7 +33,8 @@ tmp/
 *.tmp
 
 # Uploaded runtime files
-backend/uploads/
+backend/uploads/*
+!backend/uploads/.gitkeep
 
 # Redis persistence
 dump.rdb

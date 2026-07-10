@@ -9,6 +9,8 @@ const express = require("express");
 const http = require("http");   // http是Node.js自带模块，用来创建真正的HTTP服务器。这里引入它是为了让Socket.IO可以挂载到同一个服务器上。
 const cors = require("cors");   // 用于解决跨域问题
 const cron = require("node-cron");
+const fs = require("fs");
+const path = require("path");
 const syncViewsToMongo = require("./jobs/viewSyncJob");
 const connectDB = require("./config/db");
 const redisClient = require("./config/redisClient");
@@ -20,6 +22,12 @@ const adminRoutes = require("./routes/adminRoutes");
 
 const { Server } = require("socket.io");
 const app = express();  // 创建一个网站服务器，app即后端网站
+// 自动创建 uploads 文件夹
+const uploadDir = path.join(__dirname, "uploads");
+if (!fs.existsSync(uploadDir)) {
+    fs.mkdirSync(uploadDir, { recursive: true });
+    console.log("uploads folder created");
+}
 const server = http.createServer(app);  // 把Express应用app包装进一个真正的HTTP server里面
 
 // 创建WebSocket服务
